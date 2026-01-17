@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage 'Checkout' {
+        stage ('Checkout') {
             steps {
                 echo 'Checking out source code...'
                 //checkout branch: 'main', scm: $class: 'GitSCM', userRemoteConfigs: [[url: 'https://github.com/adityaivision/jenkins-sonarqube-docker-cicd.git']]
@@ -12,7 +12,7 @@ pipeline {
             steps {
                 echo 'Building...'
                 sh 'npm install'
-                echo 'NPM Version': sh 'npm -v' // Example build command
+                sh 'echo NPM Version: $(npm -v)' // Example build command
             }
         }
 }
