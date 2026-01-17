@@ -5,7 +5,7 @@ pipeline {
         stage 'Checkout' {
             steps {
                 echo 'Checking out source code...'
-                checkout branch: 'main', scm: $class: 'GitSCM', userRemoteConfigs: [[url: 'https://github.com/adityaivision/jenkins-sonarqube-docker-cicd.git']]
+                //checkout branch: 'main', scm: $class: 'GitSCM', userRemoteConfigs: [[url: 'https://github.com/adityaivision/jenkins-sonarqube-docker-cicd.git']]
             }
         }
         stage('Build') {
