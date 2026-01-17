@@ -17,3 +17,6 @@ pipeline {
         }
 }
 }
+
+
+// This Jenkinsfile defines a simple CI pipeline with two stages: Checkout and Build. The Checkout stage checks out the source code from the SCM repository, and the Build stage installs npm dependenci
