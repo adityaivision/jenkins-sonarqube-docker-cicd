@@ -19,11 +19,5 @@ pipeline {
                 echo "Running tests..."
             }
         }
-
-        stage('Test') {
-            steps {
-                echo "Running tests..."
-            }
-        }
     }
 }
